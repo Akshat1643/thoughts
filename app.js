@@ -7,4 +7,5 @@ app.use('/',userRoute)
 app.listen(3000,()=>{
     console.log("hanji chal raha ha")
 })
+module.exports = app;
 //2dK3LU0lWRpCRYPG
