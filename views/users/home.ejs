@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thoughts - Your Personal Space</title>
+    <style>
+        /* General body styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #b39ddb, #7b1fa2);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        /* Styling the container */
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 50px 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Header styling */
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: #f8bbd0;
+            letter-spacing: 2px;
+        }
+
+        /* Paragraph styling */
+        p {
+            font-size: 1.4em;
+            line-height: 1.6em;
+            margin-bottom: 40px;
+            color: #fce4ec;
+        }
+
+        /* Button container */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        /* Button styles */
+        .btn {
+            padding: 15px 40px;
+            font-size: 1.2em;
+            color: #ffffff;
+            background: linear-gradient(135deg, #ab47bc, #8e24aa);
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(135deg, #ce93d8, #ba68c8);
+        }
+
+        /* Animation for fade in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Background floating effects */
+        .floating-shapes {
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-shapes:nth-child(2) {
+            top: auto;
+            bottom: -100px;
+            left: -100px;
+            width: 300px;
+            height: 300px;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        /* Floating animation */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(30px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="floating-shapes"></div>
+    <div class="floating-shapes"></div>
+
+    <div class="container">
+        <h1>Thoughts</h1>
+        <p>Your personal space to write your thoughts, to-do lists, feelings, and everything on your mind. Let your thoughts flow freely.</p>
+        <div class="buttons">
+            <a href="/register" class="btn">register</a>
+            <a href="/login" class="btn">login</a>
+        </div>
+    </div>
+
+</body>
+</html>

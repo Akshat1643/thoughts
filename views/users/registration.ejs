@@ -1,0 +1,77 @@
+<% include('../layouts/header.ejs') %>
+<style>
+    body {
+        background-color: #f3e5f5; /* Light purple background */
+        font-family: 'Arial', sans-serif;
+    }
+
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+        text-align: center;
+        color: #6a1b9a; /* Darker purple */
+        margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="file"],
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #e1bee7; /* Light purple border */
+        border-radius: 5px;
+        font-size: 1em;
+        transition: border 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="number"]:focus,
+    input[type="password"]:focus {
+        border-color: #ab47bc; /* Darker purple on focus */
+        outline: none;
+    }
+
+    input[type="submit"] {
+        background-color: #7b1fa2; /* Button purple */
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 1.1em;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #6a1b9a; /* Darker purple on hover */
+    }
+
+    .message {
+        text-align: center;
+        color: red; /* Red for error messages */
+        margin-top: 15px;
+    }
+</style>
+
+<div class="container">
+    <h1>User Registration Form</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Enter your good name" required>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="number" name="contactno" placeholder="Enter your contact number" required>
+        <input type="password" name="password" placeholder="Create your password" required>
+        <input type="file" name="image" required>
+        <input type="submit" value="Register">
+    </form>
+
+<% include('../layouts/footer.ejs') %>
