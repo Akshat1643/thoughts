@@ -25,11 +25,7 @@ const mongoose = require("mongoose")
     is_verified:{
         type:Number,
         default:0
-    },               
-    image:{
-        type:String,
-        required:true
-    },     
+    },                 
     token:{
         type:String,
         default:""
