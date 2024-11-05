@@ -103,7 +103,7 @@ const insertUser = async (req, res) => {
         let user = await userModel.create({
             name: req.body.name,
             email: req.body.email,
-            image: req.file.filename,  // Ensure multer is handling file uploads correctly
+              // Ensure multer is handling file uploads correctly
             mobile: req.body.contactno,
             password: password_Hash,  // Save the hashed password
             is_admin: 0
