@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-mongoose.connect("mongodb+srv://akshat160403:2dK3LU0lWRpCRYPG@cluster0.8j1lk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+mongoose.connect(process.env.db);
 const express = require('express')
 const app = express();
 const userRoute = require('./routes/userRoute')
